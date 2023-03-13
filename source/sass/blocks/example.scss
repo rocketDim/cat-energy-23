@@ -1,0 +1,34 @@
+.example {
+    padding: 20px;
+    background-color: $color-gray-10;
+}
+
+.example-list {
+    text-align: center;
+}
+
+.example__title {
+    color: $color-gray-70;
+    font-size: 12px;
+    line-height: 1;
+    transform: lowercase;
+}
+
+.example__text {
+    color: $color-gray-70;
+}
+
+.example__definition {
+    font-family: $font-heading;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.example__spending {
+    font-family: $font-heading;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
