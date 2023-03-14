@@ -3,6 +3,14 @@
     background-color: $color-gray-10;
 }
 
+.example__container {
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+}
+
 .example-list {
     text-align: center;
 }

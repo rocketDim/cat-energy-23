@@ -1,9 +1,31 @@
+.catalog-section__container {
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+        gap: 80px;
+    }
+}
+
 .catalog-sections__item {
     padding: 20px;
     color: $color-gray-5;
+
+    & + & {
+        margin-top: 20px;
+
+        @media (min-width: $desktop-width) {
+            margin-top: 0;
+        }
+
+        @media (min-width: $tablet-width) {
+            margin-top: 30px;
+        }
+    }
 }
 
+
 .catalog-sections__heading {
+    color: $color-black;
     font-family: $font-heading;
     font-weight: 400;
     font-size: 24px;
