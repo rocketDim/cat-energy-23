@@ -1,0 +1,15 @@
+.field {
+    color: $color-gray-70;
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.field__input {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
