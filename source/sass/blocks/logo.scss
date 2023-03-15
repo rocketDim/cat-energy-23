@@ -2,8 +2,8 @@
   @media (min-width: $mobile-width-only) {
     display: grid;
     grid-template-columns: 34px 1fr;
-    gap: 16px;
     align-items: center;
+    gap: 16px;
   }
 }
 
