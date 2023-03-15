@@ -1,3 +1,11 @@
+.catalog-sections {
+    padding-top: 20px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 82px;
+    }
+}
+
 .catalog-section__container {
     @media (min-width: $desktop-width) {
         display: grid;
@@ -7,8 +15,17 @@
 }
 
 .catalog-sections__item {
-    padding: 20px;
+    position: relative;
+    padding: 24px 20px 22px 20px;
     color: $color-gray-5;
+
+    @media (min-width: $tablet-width) {
+        padding: 77px 316px 52px 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 47px 51px 55px;
+}
 
     & + & {
         margin-top: 20px;
@@ -24,23 +41,184 @@
 }
 
 .catalog-sections__heading {
+    position: relative;
+
+    min-height: 50px;
+    margin: 0;
+    margin-bottom: 22px;
+    padding-left: 68px;
+    display: flex;
+    align-items: center;
+
     color: $color-black;
     font-family: $font-heading;
     font-weight: 400;
     font-size: 24px;
+    line-height: 37px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        position: static;
+        padding-left: 0;
+        font-size: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+        position: relative;
+        min-height: 100px;
+        margin-bottom: 38px;
+        padding-left: 162px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 50;
+        height: 50;
+        background-color: $color-green;
+        border-radius: 50%;
+    }
+
+    @media (min-width: $tablet-width) {
+        top: calc(50% - 100px);
+        right: 62px;
+        left: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: calc(50% - 50px);
+        right: auto;
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    &::after {
+        background-size: contain;
+    }
+}
+
+.catalog-sections__heading--slim {
+    &::after {
+        top: -3px;
+        left: 7px;
+
+        width: 37px;
+        height: 50px;
+
+        background-image: url("/source/img/icons/cat-slim.svg");
+
+        @media (min-width: $tablet-width) {
+            top: calc(50% - 110px);
+            right: 92px;
+            left: auto;
+            width: 140px;
+            height: 193px;
+        }
+
+        @media (min-width: $desktop-width) {
+            top: calc(50% - 54px);
+            left: 15px;
+            width: 70px;
+            height: 97px;
+        }
+    }
+}
+
+.catalog-sections__heading--pro {
+    &::after {
+        top: 11px;
+        left: -10px;
+
+        width: 67px;
+        height: 28px;
+
+        background-image: url("/source/img/icons/cat-pro.svg");
+
+        @media (min-width: $tablet-width) {
+            top: calc(50% - 56px);
+            right: 27px;
+            left: auto;
+            width: 267px;
+            height: 112px;
+        }
+
+        @media (min-width: $desktop-width) {
+            top: calc(50% - 22px);
+            left: -18px;
+            width: 134px;
+            height: 56px;
+        }
+    }
 }
 
 .catalog-sections__text {
+    margin: 0;
+    margin-bottom: 15px;
+    padding-bottom: 23px;
     font-size: 14px;
     color: $color-gray-70;
+    border-bottom: 1px solid $color-gray-20;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 48px;
+        border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 23px;
+    }
+
 }
 
 .catalog-sections__link {
+    display: grid;
+    grid-template-columns: max-content 32px;
+    align-items: center;
+    gap: 15px;
+
     color: $color-black;
     font-family: $font-heading;
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+    }
+
+    &::after {
+        content: "";
+        width: 24px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-image: url("/source/img/icons/arrow.svg");
+
+        &:hover {
+            &::after {
+                width: 32px;
+            }
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+
+        &::after {
+            width: 32px;
+        }
+    }
 }
