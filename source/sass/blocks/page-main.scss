@@ -1,8 +1,16 @@
 .page__main__heading {
+    margin: 0;
+    margin-bottom: 40px;
     font-family: $font-heading;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 32px;
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 .page-main__subheading {

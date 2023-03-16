@@ -1,10 +1,10 @@
 .card-row__heading {
+    color: $color-gray-85;
     font-family: $font-heading;
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
-
-    color: $color-gray-85;
+    text-transform: uppercase;
 }
 
 .card-row__list {

@@ -24,4 +24,54 @@
             margin-top: 20px;
         }
     }
+
+    &::before {
+        content: "";
+
+        width: 60px;
+        height: 60px;
+        margin-top: -2px;
+
+        background-color: $color-green;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        @media (min-width: $tablet-width) {
+            width: 80px;
+            height: 80px;
+            margin-top: 0;
+        }
+    }
+
+    &::after {
+        @media (min-width: $tablet-width) {
+            content: counter(process);
+            position: absolute;
+            top: 0;
+            right: 80px;
+            z-index: -1;
+
+            color: $color-gray-5;
+
+            font-family: $font-heading;
+            font-size: 280px;
+            line-height: 1;
+        }
+    }
+}
+
+.process__item--leaf::before {
+    background-image: url("/source/img/icons/leaf.svg");
+}
+
+.process__item--powder::before {
+    background-image: url("/source/img/icons/powder.svg");
+}
+
+.process__item--meal::before {
+    background-image: url("/source/img/icons/meal.svg");
+}
+
+.process__item--weight::before {
+    background-image: url("/source/img/icons/weight.svg");
 }
