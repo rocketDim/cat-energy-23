@@ -1,5 +1,5 @@
 .example {
-    padding: 20px;
+    padding: 25px 0 40px;
     background-color: $color-gray-10;
 
     @media (min-width: $tablet-width) {
@@ -26,9 +26,9 @@
 
     @media (min-width: $tablet-width) {
         display: grid;
-        grid-template-columns: 369px 1fr;
-        grid-column: 34px;
-        margin-bottom: 78px;
+        grid-template-columns: 367px 1fr;
+        grid-column: 32px;
+        margin-bottom: 79px;
     }
 
     @media  (min-width: $desktop-width) {
@@ -82,6 +82,7 @@
     padding: 0 4px;
 
     color: $color-gray-70;
+    background-color: $color-gray-10;
     font-size: 12px;
     line-height: 1;
     transform: lowercase;
@@ -137,6 +138,7 @@
     margin: 0;
     font-family: $font-heading;
     line-height: 20px;
+    text-align: center;
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {

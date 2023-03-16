@@ -25,6 +25,12 @@
 
 .field-group__list--additional {
     @media (min-width: $desktop-width) {
-        grid-template-columns: 1fr 1fr 1fr 1f;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 80px;
+    }
+
+    @media (max-width: $desktop-width) {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

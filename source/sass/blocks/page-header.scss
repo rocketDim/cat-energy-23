@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
+    padding: 24px 0;
     display: grid;
     grid-template-columns: 174px 1fr;
     gap: 17px;
@@ -23,7 +24,7 @@
   @media (max-width: $mobile-width-only) {
     width: 320px;
     margin: 0 auto;
-    padding: 10px 20px 18px;
+    padding: 12px 20px 13px;
     display: grid;
     grid-template-columns: 34px 1fr 34px;
     gap: 16px;
@@ -77,10 +78,9 @@
 
       display: block;
     }
-
-    @media (min-width: $tablet-width) {
-      margin-right: -17px;
-    }
+  }
+  @media (min-width: $tablet-width) {
+    margin-right: -17px;
   }
 }
 

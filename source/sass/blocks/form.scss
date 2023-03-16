@@ -2,10 +2,6 @@
     padding: 20px;
 }
 
-.form__group {
-    margin: 0;
-}
-
 .form__container {
     @media (min-width: $desktop-width) {
         display: grid;
@@ -20,7 +16,7 @@
 
 .form__group--contact,
 .form__group--comment,
-.form__group--addtional {
+.form__group--additional {
     @media (min-width: $desktop-width) {
         grid-column: 1 / -1;
     }
