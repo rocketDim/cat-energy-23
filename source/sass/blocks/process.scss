@@ -5,9 +5,10 @@
 
 .process__list {
   margin: 0;
+  padding: 0;
   color: $color-gray-70;
   list-style: none;
-  padding: 0;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -36,7 +37,7 @@
     padding-top: 40px;
     padding-right: 72px;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: 80px auto;
 
     counter-increment: process;
   }
@@ -44,7 +45,7 @@
 
   & + & {
     @media (max-width: $mobile-width-only) {
-      margin-top: 20px;
+      margin-top: 22px;
     }
   }
 
