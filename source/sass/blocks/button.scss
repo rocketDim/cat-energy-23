@@ -7,6 +7,7 @@
     border: none;
 
     font-family: $font-heading;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -29,4 +30,25 @@
 .button--secondary {
     color: $color-gray-70;
     background-color: $color-gray-5;
+
+    &:hover {
+        background-color: $color-gray-10;
+    }
+
+    &:active {
+        color: rgba($color-gray-70, 0.3);
+        background-color: $color-gray-10;
+    }
+}
+
+.button--fixed {
+    font-size: 16px;
+}
+
+.button--large {
+    font-size: 16px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+    }
 }

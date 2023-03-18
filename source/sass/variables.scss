@@ -7,13 +7,15 @@ $font-body: "Arial", sans-serif;
 
 $color-black: #000000;
 $color-white: #ffffff;
+$color-error: #ff8282;
 
-$color-gray-5: #F2F2F2;
-$color-gray-10: #e5e5e5;
+$color-gray-5: #f2f2f2;
+$color-gray-10: #ebebeb;
 $color-gray-15: #e6e6e6;
 $color-gray-18: #dcdcdc;
 $color-gray-20: #d9d9d9;
 $color-gray-25: #cdcdcd;
+$color-gray-30: #bababa;
 $color-gray-60: #666666;
 $color-gray-70: #444444;
 $color-gray-85: #222222;
@@ -25,6 +27,6 @@ $color-green-2: #63a63b;
 
 // Viewports
 
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
-$mobile-width-only: 767px;

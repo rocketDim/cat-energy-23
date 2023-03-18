@@ -1,18 +1,111 @@
 .card {
-    @media (min-width: $tablet-width) {
-        background-color: $color-gray-5;
-    }
+  padding-top: 19px;
+  padding-bottom: 25px;
+  display: grid;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img link"
+      "img list"
+      "button button";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 38px 40px;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+      "img"
+      "link"
+      "list"
+      "button";
+    background-color: $color-gray-5;
+    background-image: linear-gradient(to bottom, $color-white 80px, $color-gray-5 80px);
+  }
+}
+
+.card__link {
+  margin-bottom: 9px;
+  padding-right: 60px;
+  grid-area: link;
+
+  color: $color-gray-85;
+
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+  }
 }
 
 .card__heading {
-    font-family: $font-heading;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
+  margin: 0;
+  font-family: $font-heading;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .card__list {
-    color: $color-gray-70;
-    font-size: 12px;
+  color: $color-gray-70;
+  font-size: 12px;
+
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 9px 0;
+  grid-area: list;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+  }
+}
+
+.card__img {
+  grid-area: img;
+  align-self: center;
+  justify-self: center;
+}
+
+.card__title {
+  margin: 0;
+  padding-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $color-gray-25;
+  }
+}
+
+.card__definition {
+  margin: 0;
+  padding-left: 4px;
+
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $color-gray-25;
+  }
+}
+
+.card__button {
+  grid-area: button;
 }

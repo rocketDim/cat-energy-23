@@ -13,8 +13,20 @@
     }
 }
 
+.page-main__header {
+    padding: 28px 0 40px;
+}
+
+
 .page-main__subheading {
+    margin: 0;
+
     font-family: $font-heading;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
