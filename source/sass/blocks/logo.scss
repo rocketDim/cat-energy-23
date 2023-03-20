@@ -1,9 +1,17 @@
 .logo {
-  &:not(.logo__footer) {
+  &:not(.logo--footer) {
     display: grid;
     grid-template-columns: 34px 1fr;
     align-items: center;
     gap: 16px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 61px 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 71px 1fr;
+    }
   }
 
   &:link:hover {
@@ -13,22 +21,19 @@
   &:link:active {
     opacity: 0.6;
   }
-  
+
   img {
     display: block;
   }
 }
 
-.logo__sign {
-  justify-self: center;
-}
-
-.logo__footer {
+.logo--footer {
   display: flex;
   align-items: center;
 
   @media (max-width: $mobile-width-only) {
     padding: 8px;
+
     justify-content: center;
   }
 }
