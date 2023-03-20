@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding: 24px 0;
     display: grid;
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 16px;
   }
 
@@ -21,7 +21,7 @@
 
 .page-header__nav--main {
   @media (min-width: $desktop-width) {
-    grid-template-columns: 174px 50%;
+    grid-template-columns: max-content 50%;
     justify-content: space-between;
   }
 }
@@ -75,7 +75,7 @@
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/source/img/icons/burger.svg");
+  background-image: url("../img/icons/burger.svg");
   border: none;
 
   @media (max-width: $mobile-width-only) {
@@ -85,7 +85,7 @@
 
     .page-header__nav--opened & {
       display: block;
-      background-image: url("/source/img/icons/close.svg");
+      background-image: url("../img/icons/close.svg");
     }
   }
 

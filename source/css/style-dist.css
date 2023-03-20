@@ -27,9 +27,9 @@ img {
 .site-menu {
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1;
   text-transform: uppercase;
   list-style: none;
-  line-height: 1;
 }
 @media (max-width: 767px) {
   .site-menu {
@@ -39,7 +39,7 @@ img {
     text-align: center;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .site-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -68,7 +68,7 @@ img {
     right: 17px;
     left: 17px;
     height: 2px;
-    background-color: #000000;
+    background-color: #68b738;
   }
 }
 
@@ -290,12 +290,16 @@ img {
   grid-template-rows: min-content 1fr min-content;
 }
 
+.page-main__header {
+  padding: 28px 0 40px;
+}
+
 .page-main__heading {
   margin: 0;
   margin-bottom: 40px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
 }
 @media (min-width: 768px) {
@@ -304,10 +308,6 @@ img {
     font-size: 60px;
     line-height: 60px;
   }
-}
-
-.page-main__header {
-  padding: 28px 0 40px;
 }
 
 .page-main__subheading {
@@ -361,7 +361,7 @@ img {
   grid-template-columns: 60px 1fr;
   gap: 20px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .process__item {
     position: relative;
     z-index: 0;
@@ -2281,8 +2281,10 @@ switcher {
     padding: 24px 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 174px 16px 1fr;
-    grid-template-columns: 174px 1fr;
+    -ms-grid-columns: -webkit-max-content 16px 1fr;
+    -ms-grid-columns: max-content 16px 1fr;
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
     gap: 16px;
   }
 }
@@ -2294,8 +2296,10 @@ switcher {
 
 @media (min-width: 1200px) {
   .page-header__nav--main {
-    -ms-grid-columns: 174px 50%;
-    grid-template-columns: 174px 50%;
+    -ms-grid-columns: -webkit-max-content 50%;
+    -ms-grid-columns: max-content 50%;
+    grid-template-columns: -webkit-max-content 50%;
+    grid-template-columns: max-content 50%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2355,7 +2359,7 @@ switcher {
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("/source/img/icons/burger.svg");
+  background-image: url("../img/icons/burger.svg");
   border: none;
 }
 @media (max-width: 767px) {
@@ -2364,7 +2368,7 @@ switcher {
   }
   .page-header__nav--opened .page-header__toggler {
     display: block;
-    background-image: url("/source/img/icons/close.svg");
+    background-image: url("../img/icons/close.svg");
   }
 }
 @media (min-width: 768px) {
