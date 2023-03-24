@@ -1,6 +1,6 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [{{Деменко Дмитрий}}]({{https://htmlacademy.ru/profile/rocketdim}}).
 * Наставник: `Неизвестно`.
 
 ---
